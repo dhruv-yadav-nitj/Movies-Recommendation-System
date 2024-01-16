@@ -1,5 +1,6 @@
 import streamlit as st, pandas as pd
 import pickle
+import os
 
 
 
@@ -7,8 +8,8 @@ import pickle
 # but the streamlit application was not accepting in that format
 # so we needed to fetch in the form of dictionary using pandas dataframe
 
-
-movies = pickle.load(open('/movie_dict.pkl', 'rb'))
+path1 = os.path.join(os.path.dirname(__file__), 'movie_dict.pkl')
+movies = pickle.load(open(path1, 'rb'))
 movies = pd.DataFrame(movies)
 
 st.title('Movie Recommender System')
