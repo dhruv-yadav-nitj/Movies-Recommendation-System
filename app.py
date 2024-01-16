@@ -8,7 +8,7 @@ import pickle
 # so we needed to fetch in the form of dictionary using pandas dataframe
 
 
-movies = pickle.load(open('\movie_dict.pkl', 'rb'))
+movies = pickle.load(open('/movie_dict.pkl', 'rb'))
 movies = pd.DataFrame(movies)
 
 st.title('Movie Recommender System')
@@ -25,7 +25,7 @@ selected_movie = option
 
 
 
-similarity = pickle.load(open("\similarity.pkl", 'rb'))
+similarity = pickle.load(open("/similarity.pkl", 'rb'))
 
 def recommend (movie):
     movie_index = movies[movies['title'] == movie].index[0] # fetching index of movie
