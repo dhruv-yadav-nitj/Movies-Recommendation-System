@@ -25,8 +25,8 @@ option = st.selectbox(
 selected_movie = option
 
 
-
-similarity = pickle.load(open("/similarity.pkl", 'rb'))
+path2 = os.path.join(os.path.dirname(__file__), 'similarity.pkl')
+similarity = pickle.load(open(path2, 'rb'))
 
 def recommend (movie):
     movie_index = movies[movies['title'] == movie].index[0] # fetching index of movie
