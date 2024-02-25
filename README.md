@@ -7,7 +7,7 @@ Welcome to the Content-Based Movie Recommender System project! This project util
 - Utilizes a dataset comprising almost 5000 movies for training and recommendation.
 - Deployed using Streamlit, making it user-friendly and accessible.
 
-[Demo](https://movie-recommender-dhruv.streamlit.app/)
+[Demo](https://movie-recommender-dhruv.streamlit.app/) | [Live](https://movie-recommender-dhruv.streamlit.app/)
 
 ## How it Works
 
